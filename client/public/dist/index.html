@@ -13,7 +13,16 @@
     <div id="root"></div>
 
     <script type="text/javascript" src="bundle.js"></script>
-
+    <script>
+      var aTag = document.createElement('a');
+      aTag.setAttribute('href', 'http://hackreactor.com');
+      var img = document.createElement('img');
+      img.setAttribute('src', 'http://i.imgur.com/x86kKmF.png');
+      img.setAttribute('alt', 'Built at Hack Reactor');
+      img.setAttribute('style', 'position: fixed; top: 0; right: 0; border: 0;');
+      aTag.append(img);
+      document.body.appendChild(aTag);      
+    </script>
   </body>
 </html>
 
